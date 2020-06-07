@@ -99,5 +99,5 @@ const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false }
 MIT © [ahakem](https://github.com/ahakem)
 
 ### credits
-The idea came from tis repo with some enhancment 
+The idea came from this repo with some enhancment 
 [EnetoJara/window-opener](https://github.com/EnetoJara/window-opener)
