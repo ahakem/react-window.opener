@@ -3,8 +3,9 @@ import React, {useState} from 'react'
 export default function SmallWindow() {
   const [state, setstate] = useState("")
   const update = (evt) =>{
-    setstate(evt.target.value)
+    
     window.opener.onSuccess(state)
+    setstate(evt.target.value)
   }
     return (
       <center>

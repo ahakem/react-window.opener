@@ -22,7 +22,9 @@ function watcher() {
 
 const WindowOpener = (props) => {
   const { children, width, height } = props
-  const opts = `dependent=${1}, alwaysOnTop=${1}, alwaysRaised=${1}, alwaysRaised=${1}, width=${width || 300}, height=${height || 400} left=${left} top=${top}`
+  const opts = `dependent=${1}, alwaysOnTop=${1}, alwaysRaised=${1}, alwaysRaised=${1}, width=${
+    width || 300
+  }, height=${height || 400} left=${left} top=${top}`
   browser = window.self
   browser.onSuccess = (res) => {
     props.bridge(null, res)
@@ -94,6 +96,6 @@ WindowOpener.propTypes = {
   height: PropTypes.number
 }
 WindowOpener.defaultProps = {
-  name: 'Cool popup',
+  name: 'Cool popup'
 }
 export default WindowOpener
