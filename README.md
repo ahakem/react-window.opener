@@ -1,6 +1,6 @@
 # react-window-opener
 
-> A small reactjs utility to make sure that window.open actually opens popup and cominecate with the parent window.opner
+> A small reactjs utility to make sure that window.open actually opens popup and cominecate with the parent window.opener
 
 [![NPM](https://img.shields.io/npm/v/react-window-opener.svg)](https://www.npmjs.com/package/react-window-opener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
