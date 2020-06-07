@@ -7,24 +7,70 @@
 ## Install
 
 ```bash
-npm install --save react-window-opener
+npm install react-window-opener
 ```
 
-## Usage
+or
+
+```bash
+yarn add react-window-opener
+```
+
+## Usage for React App
+
+### Parent Page
 
 ```jsx
-import React, { Component } from 'react'
 
-import MyComponent from 'react-window-opener'
-import 'react-window-opener/dist/index.css'
+import WindowOpener from 'react-window-opener'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+export default function Example  {
+    const childResponse = (err, res) => {
+    if (err) {
+      console.log(res, 'err')
+    }
+    console.log(res, 'res')
   }
+    return (
+      <WindowOpener url='/popUp-URL' bridge={childResponse}>
+      )
 }
+```
+
+### Child Page (The PopUp)
+
+ just pass the needed data using
+ `window.opener.onSuccess(state)`
+
+```jsx
+export default function SmallWindow() {
+  const [state, setstate] = useState('')
+  const update = (evt) => {
+    setstate(evt.target.value)
+    window.opener.onSuccess(state)
+  }
+  return (
+    <>
+      <input value={state} onChange={update} />
+      <button
+        onClick={() => {
+          window.close()
+        }}
+      >
+        Close Me
+      </button>
+    </>
+  )
+}
+```
+## How To use it in NextJs App
+
+all you need to import it like that
+```jsx
+const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false })
+
 ```
 
 ## License
 
-MIT © [ahakim](https://github.com/ahakim)
+MIT © [ahakem](https://github.com/ahakem)
