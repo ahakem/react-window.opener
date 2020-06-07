@@ -4,6 +4,14 @@
 
 [![NPM](https://img.shields.io/npm/v/react-window-opener.svg)](https://www.npmjs.com/package/react-window-opener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+* [Why I may use this](#Why-I-may-use-this)
+* [Demo](#Demo)
+* [Install](#Install)
+* [Usage for React App](#Usage-for-React-App)
+* [How To use it in NextJs App](#How-To-use-it-in-NextJs-App)
+* [Props](#Props)
+
+
 ## Why I may use this
 If you are using React and opening a window popup for any reason like Google authentication, for example, you will need to pass the data back to the parent page. but as you are using react you can't access the function in your page components via 'window.opener'، 
 
@@ -78,7 +86,7 @@ const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false }
 
 ```
 ## Props
-|    params    |   value  |  default value   |   description    |
+|    Params    |   Value  |  Default Value   |   Description    |
 |:------------:|:--------:|:----------------:|:----------------:|
 |    url       |  string  |   REQUIRED       | the url for the page which will open in the popup |
 |    bridge    |  function|   REQUIRED       | Function to handel the result that you will pass from the child popup |
