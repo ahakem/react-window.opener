@@ -59,7 +59,7 @@ const WindowOpener = (props) => {
     }, 0)
 
     if (timer === null) {
-      timer = setInterval(watcher, 2000)
+      timer = setInterval(watcher, 500)
     }
 
     return

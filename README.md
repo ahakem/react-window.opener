@@ -4,12 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/react-window-opener.svg)](https://www.npmjs.com/package/react-window-opener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-* [Why I may use this](#Why-I-may-use-this)
-* [Demo](#Demo)
+* [Why I may use this](#why-i-may-use-this)
+* [Demo](#demo)
 * [Install](#Install)
-* [Usage for React App](#Usage-for-React-App)
-* [How To use it in NextJs App](#How-To-use-it-in-NextJs-App)
-* [Props](#Props)
+* [Usage for React App](#usage-for-react-app)
+* [How To use it in NextJs App](#how-to-use-it-in-nextjs-app)
+* [Props](#props)
 
 
 ## Why I may use this
@@ -98,6 +98,6 @@ const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false }
 
 MIT © [ahakem](https://github.com/ahakem)
 
-### credits
+## credits
 The idea came from this repo with some enhancment 
 [EnetoJara/window-opener](https://github.com/EnetoJara/window-opener)

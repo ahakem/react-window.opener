@@ -3,6 +3,7 @@ import WindowOpener from 'react-window-opener'
 export default function Home() {
   const [state, setstate] = useState('')
   const childResponse = (err, res) => {
+    
     if (err) {
       console.log(res, 'err')
       setstate(res)
