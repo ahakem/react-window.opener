@@ -1,28 +1,17 @@
 import React from 'react'
 
-
 import SmallWindow from './SmallWindow'
 import Home from './Home'
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 const App = () => {
-  
   return (
-    <Router>
-      <>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-      <Route path="/login" exact component={SmallWindow} />
-      <Route  component={Home} />
-      
+        <Route path='/login' exact component={SmallWindow} />
+        <Route component={Home} />
       </Switch>
-      </>
-
-    </Router>
+    </HashRouter>
   )
 }
 

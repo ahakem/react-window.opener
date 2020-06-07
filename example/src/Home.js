@@ -17,14 +17,14 @@ export default function Home() {
         Here the value from the child window: 
         <b style={{ color: 'red' }}> {state}</b>{' '}
       </p>
-      <WindowOpener url='/login' bridge={childResponse}>
+      <WindowOpener url='#/login' bridge={childResponse}>
         <div style={{ color: '#fff', 
         background:'blueviolet',
         display:'inline-block',
          padding:'10px',
          borderRadius:'8px',
          cursor: 'pointer'
-         }}>Click Me to open popup window</div>
+         }}>Click Me to open popup</div>
       </WindowOpener>
     </div>
   )
