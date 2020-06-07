@@ -1,10 +1,29 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-window-opener'
-import 'react-window-opener/dist/index.css'
+
+import SmallWindow from './SmallWindow'
+import Home from './Home'
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  
+  return (
+    <Router>
+      <>
+      <Switch>
+      <Route path="/login" exact component={SmallWindow} />
+      <Route  component={Home} />
+      
+      </Switch>
+      </>
+
+    </Router>
+  )
 }
 
 export default App
