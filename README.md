@@ -4,6 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/react-window-opener.svg)](https://www.npmjs.com/package/react-window-opener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Why I may use this
+If you are using React and opening a window popup for any reason like Google authentication, for example, you will need to pass the data back to the parent page. but as you are using react you can't access the function in your page components via 'window.opener'، 
+
+## Demo
+[https://ahakem.github.io/react-window.opener/#/](https://ahakem.github.io/react-window.opener/#/)
+
 ## Install
 
 ```bash
@@ -65,12 +71,25 @@ export default function SmallWindow() {
 ```
 ## How To use it in NextJs App
 
-all you need to import it like that
+All you need to import it like that more info [here](https://nextjs.org/docs/advanced-features/dynamic-import#with-no-ssr)
+
 ```jsx
 const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false })
 
 ```
+## Props
+|    params    |   value  |  default value   |   description    |
+|:------------:|:--------:|:----------------:|:----------------:|
+|    url       |  string  |   REQUIRED       | the url for the page which will open in the popup |
+|    bridge    |  function|   REQUIRED       | Function to handel the result that you will pass from the child popup |
+|    width     |  number  |   300            | PopUp Width |
+|    height    |  number  |   400            | PopUp Height |
+
 
 ## License
 
 MIT © [ahakem](https://github.com/ahakem)
+
+### credits
+The idea came from tis repo with some enhancment 
+[EnetoJara/window-opener](https://github.com/EnetoJara/window-opener)
