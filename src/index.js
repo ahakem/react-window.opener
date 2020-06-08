@@ -20,7 +20,7 @@ function watcher() {
 }
 
 const WindowOpener = (props) => {
-  const { children, width, height } = props
+  const { children, width, height, className } = props
   const opts = `dependent=${1}, alwaysOnTop=${1}, alwaysRaised=${1}, alwaysRaised=${1}, width=${
     width || 300
   }, height=${height || 400} left=${left} top=${top}`
@@ -61,7 +61,7 @@ const WindowOpener = (props) => {
     return
   }
 
-  return <div onClick={onClickHandler}>{children}</div>
+  return <div className = {className} onClick={onClickHandler}>{children}</div>
 }
 
 const dualScreenLeft =

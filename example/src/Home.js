@@ -18,7 +18,7 @@ export default function Home() {
         Here the value from the child window: 
         <b style={{ color: 'red' }}> {state}</b>{' '}
       </p>
-      <WindowOpener url='#/login' bridge={childResponse}>
+      <WindowOpener  url='#/login' bridge={childResponse}>
         <div style={{ color: '#fff', 
         background:'blueviolet',
         display:'inline-block',

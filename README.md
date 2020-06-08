@@ -92,6 +92,7 @@ const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false }
 |    bridge    |  function|   REQUIRED       | Function to handel the result that you will pass from the child popup |
 |    width     |  number  |   300            | PopUp Width |
 |    height    |  number  |   400            | PopUp Height |
+|    className    |    |      Empty         |  |
 
 
 ## License
