@@ -1,6 +1,6 @@
 {
   "name": "react-window-opener",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A small reactjs utility to make sure that window.open actually opens popup and cominecate with the parent window.opner",
   "author": "ahakem",
   "license": "MIT",
