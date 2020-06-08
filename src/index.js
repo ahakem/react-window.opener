@@ -14,7 +14,6 @@ function watcher() {
   } else if (popup !== null && popup.closed) {
     clearInterval(timer)
     browser.focus()
-    browser.onClose('child was closed')
     timer = null
     popup = null
   }
@@ -54,9 +53,6 @@ const WindowOpener = (props) => {
 
     popup = browser.open(url, name, opts)
 
-    setTimeout(() => {
-      popup.opener.onOpen('child was opened')
-    }, 0)
 
     if (timer === null) {
       timer = setInterval(watcher, 500)
