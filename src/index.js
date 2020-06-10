@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 
 let browser = window
@@ -84,14 +83,4 @@ const systemZoom = width / window.screen.availWidth
 const left = (width - 300) / 2 / systemZoom + dualScreenLeft
 const top = (height - 400) / 2 / systemZoom + dualScreenTop
 
-WindowOpener.propTypes = {
-  url: PropTypes.string.isRequired,
-  bridge: PropTypes.func.isRequired,
-  name: PropTypes.string,
-  width: PropTypes.number,
-  height: PropTypes.number
-}
-WindowOpener.defaultProps = {
-  name: 'Cool popup'
-}
 export default WindowOpener
