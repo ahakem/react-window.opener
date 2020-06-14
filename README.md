@@ -82,6 +82,7 @@ export default function SmallWindow() {
 All you need to import it like that more info [here](https://nextjs.org/docs/advanced-features/dynamic-import#with-no-ssr)
 
 ```jsx
+import dynamic from 'next/dynamic'
 const WindowOpener = dynamic(() => import('react-window-opener'), { ssr: false })
 
 ```
